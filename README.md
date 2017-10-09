@@ -4,3 +4,4 @@ git add README.md
 git commit -m "first commit"
 git remote add origin https://github.com/aruhirin/aruhi.git
 git push -u origin master
+php -S localhost:8000
