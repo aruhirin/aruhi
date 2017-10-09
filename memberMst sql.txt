@@ -1,0 +1,13 @@
+﻿CREATE DATABASE kadai  DEFAULT CHARACTER SET utf8 collate utf8_general_ci;
+USE kadai;
+drop table if exists `membermst`;
+
+CREATE TABLE `membermst`(
+	`memId` char(4) not null,
+    `memName` varchar(256) not null,
+    `memMail` varchar(256) not null,
+    `comName` varchar(256) not null,
+    PRIMARY KEY(`memId`)
+) default character set utf8 collate utf8_general_ci ;
+
+INSERT INTO `membermst` VALUES ('0000','山口','yamaguchi@email.com','google'),('0001','田中','tanaka@email.com','yahoo'),('0002','大田','oota@email.com','naver'),('0003','鈴木','suzuki@email.com','富士通'),('0004','木村','kimura@email.com','bufs'),('0005','中村','nakamura@email.com','tomato'),('0006','山田','yamada@email.com','toyota'),('0007','高橋','takahashi@email.com','jsl'),('0008','山本','yamamoto@email.com','sis'),('0009','加藤','kato@email.com','enet'),('0010','小林','kobayashi@email.com','menpower');
